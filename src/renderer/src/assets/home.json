@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Optimize Windows Powerplan",
+    "description": "Maximize your gaming experience with our custom power plan. It boosts FPS and performance by optimizing CPU and GPU usage, reducing background processes, and enhancing system responsiveness for smoother, lag-free gameplay.",
+    "cmd": "updatePowerPlan"
+  },
+  {
+    "title": "Remove Xbox Game Overlay",
+    "description": "Description of another card.",
+    "cmd": "removeXboxOverlay"
+  },
+  {
+    "title": "Remove Xbox Game Overlay",
+    "description": "Description of another card.",
+    "cmd": "removeXboxOverlay"
+  },
+  {
+    "title": "Remove Xbox Game Overlay",
+    "description": "Description of another card.",
+    "cmd": "removeXboxOverlay"
+  }
+]

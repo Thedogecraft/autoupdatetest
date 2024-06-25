@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+:root {
+  --coilui-primary: #007bff;
+  --coilui-bg: #121212;
+  --coilui-dark: #30333a;
+  --coilui-secondary: #e5e7eb;
+  --coilui-warning: #e9bd0c;
+  --coilui-success: #0abf30;
+  --coilui-error: #e24d4c;
+  --coilui-text: #fff;
+  --coilui-textdark: #ffffff;
+  --coilui-alt: #ddd; /* Used for cards */
+  --coilui-shadow: inset 0px -1px 2px hsla(221, 39%, 11%, 0.15);
+}
+body {
+  margin: 0;
+  background: #121212;
+  color: #ededed;
+}
+.sidebar {
+  height: 100%;
+  width: 75px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #1c1c1c;
+  transition: 0.5s;
+  padding-top: 20px;
+  white-space: nowrap;
+  margin-top: 35px;
+  border-right: 1px solid #2c2c2c;
+}
+.sidebar a {
+  position: relative;
+  left: 17.5%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 90px;
+  width: 20%;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+  margin-top: 0px;
+}
+.sidebar a:hover {
+  background: #fff 1a;
+  transition: 0.3s;
+}
+.sidebar svg {
+  margin-top: 12px;
+}
+.sidebar a .fa,
+.sidebar a .far,
+.sidebar a .fas {
+  line-height: 50px;
+}
+.sidebar a .tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: black;
+  padding: 8px 15px;
+  border-radius: 3px;
+  top: 10px;
+  left: 70px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.sidebar a .tooltip:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+.sidebar a:hover {
+  background-color: rgb(59, 57, 66);
+}
+.sidebar a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar a.active {
+  background-color: rgb(59, 57, 66);
+}
+.sidebar a.active i {
+  color: purple;
+}
+.sidebar .sidebar-bottom {
+  position: absolute;
+  bottom: 55px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.maincontent {
+  margin-left: 100px;
+  margin-top: 35px;
+}
+nav {
+  border: 1px solid #2c2c2c;
+  height: 35px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  background: #1c1c1c;
+}
+#title {
+  user-select: none;
+  font-size: 15px;
+  margin-left: 10px;
+  color: #fff;
+  -webkit-app-region: drag;
+}
+:not(nav) {
+  -webkit-app-region: no-drag;
+}
+.nav-buttons {
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+}
+.nav-buttons > button {
+  transition: background 0.2s ease;
+  background: #1c1c1c;
+  border: none;
+  height: 100%;
+  margin: 0;
+  aspect-ratio: 1;
+  color: #ededed;
+  font-size: 17px;
+}
+.nav-buttons > button > svg {
+  margin-top: 5px;
+}
+.nav-buttons > button:hover {
+  transition: 0.2s ease;
+  background: #2c2c2c;
+  cursor: pointer;
+}
+.nav-buttons > button:active {
+  background: #4c4c4c;
+}
+.titleicon {
+  margin-right: 10px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  box-shadow:
+    var(--coilui-shadow),
+    0 0 0 0 transparent;
+  background-color: #30333a;
+  color: var(--coilui-text);
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.1s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: var(--coilui-primary) !important;
+  color: var(--coilui-text);
+}
+.btn-error {
+  background-color: var(--coilui-error) !important;
+  color: var(--coilui-text);
+}
+.btn-success {
+  background-color: var(--coilui-success) !important;
+  color: var(--coilui-text);
+}
+.btn-warning {
+  background-color: var(--coilui-warning);
+  color: var(--coilui-text);
+}
+.btn.btn-large {
+  font-weight: 700;
+  min-height: 2.5rem;
+}
+.btn:active,
+.press:active {
+  transform: scale(0.95); /* Scale down when held down */
+}
+.card {
+  background-color: var(--coilui-bg);
+  padding: 20px;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+}
+.scard {
+  width: 400px;
+}
+.cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cardswitch {
+  display: flex;
+  float: right;
+}
+.boost {
+  display: flex;
+  margin: 10px;
+}
